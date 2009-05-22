@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SubscriptionControllerTest < ActionController::TestCase
+class SubscriptionControllerTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   def test_truth
     assert true
