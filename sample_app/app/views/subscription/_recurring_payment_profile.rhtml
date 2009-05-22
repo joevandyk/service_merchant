@@ -32,7 +32,7 @@
     <td><%= Date.new(profile.created_at.year, profile.created_at.month, profile.created_at.mday) %></td>
     <td><%= (profile.trial_days > 0) ? profile.trial_days : "--" %></td>
     <td><%= profile.card_owner_memo %></td>
-    <td><%= profile.status.capitalize %><% if !profile.problem_status.empty? %><br />
+    <td><%= profile.status.capitalize %><% if !profile.problem_status.blank? %><br />
           payment problem: <%= profile.problem_status %>
         <% end %>
     </td>
